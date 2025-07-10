@@ -97,6 +97,24 @@
       transform: scale(1.01);
     }
 
+    a.download-link {
+      margin-top: 20px;
+      display: inline-block;
+      background: linear-gradient(135deg, #EC1C24 0%, #A4262C 100%);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a.download-link:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 22px rgba(236, 28, 36, 0.3);
+    }
+
     .message {
       margin-top: 18px;
       padding: 12px 16px;
@@ -150,6 +168,12 @@
       <div class="file-name" id="fileName">Nessun file selezionato</div>
       <button type="submit">Carica il File</button>
     </form>
+
+    <!-- Link per scaricare il file d'esempio -->
+    <a href="EsempioCertificati_Formattato_ConBordi.xlsx" class="download-link" download>
+      📥 Scarica file d'esempio
+    </a>
+
     <div id="message" class="message"></div>
   </div>
 
